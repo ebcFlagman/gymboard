@@ -1,0 +1,98 @@
+name: ✨ Feature Request
+description: Schlage eine neue Funktion oder Verbesserung vor
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für deinen Vorschlag! Je konkreter die Beschreibung, desto schneller können wir den Aufwand einschätzen.
+
+  - type: markdown
+    attributes:
+      value: |
+        🔍 **Bitte zuerst prüfen:** Gibt es bereits einen ähnlichen Vorschlag? [Offene & geschlossene Issues durchsuchen](https://github.com/OWNER/REPO/issues?q=is%3Aissue)
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      description: Welches Problem soll gelöst werden? Welcher Bedarf besteht?
+      placeholder: "Als [Rolle] möchte ich [Ziel], damit [Nutzen]..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Vorgeschlagene Lösung
+      description: Wie stellst du dir die Umsetzung vor?
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Betrachtete Alternativen
+      description: Welche anderen Lösungsansätze wurden in Betracht gezogen und warum verworfen?
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Akzeptanzkriterien
+      description: Wann gilt dieses Feature als abgeschlossen? (Gerne als Liste)
+      placeholder: |
+        - [ ] Kriterium 1
+        - [ ] Kriterium 2
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorität
+      options:
+        - Muss (Blocker / Business-kritisch)
+        - Sollte (Hoher Mehrwert)
+        - Könnte (Nice-to-have)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Art der Änderung
+      options:
+        - Neue Funktion
+        - Verbesserung bestehender Funktion
+        - UX / UI Änderung
+        - Technische Verbesserung (Refactoring, Performance)
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Betroffene Bereiche / Auswirkungen
+      description: Welche Module, Services oder Teams sind betroffen? Gibt es Breaking Changes?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Zusätzlicher Kontext
+      description: Mockups, Links, verwandte Issues etc.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checkliste
+      options:
+        - label: Ich habe nach bestehenden Feature Requests gesucht
+          required: true

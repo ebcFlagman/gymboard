@@ -1,0 +1,116 @@
+name: 🐛 Bug Report
+description: Melde einen Fehler, um die Anwendung zu verbessern
+title: "[Bug]: "
+labels: ["bug", "triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass du dir die Zeit nimmst, einen Bug zu melden! Bitte fülle die folgenden Felder so genau wie möglich aus.
+
+  - type: markdown
+    attributes:
+      value: |
+        🔍 **Bitte zuerst prüfen:** Wurde dieser Bug bereits gemeldet? [Offene & geschlossene Issues durchsuchen](https://github.com/OWNER/REPO/issues?q=is%3Aissue)
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Beschreibung
+      description: Eine klare und präzise Beschreibung des Fehlers.
+      placeholder: Was ist passiert?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Schritte zur Reproduktion
+      description: Wie können wir den Fehler nachstellen?
+      placeholder: |
+        1. Gehe zu '...'
+        2. Klicke auf '...'
+        3. Scrolle zu '...'
+        4. Fehler wird sichtbar
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Erwartetes Verhalten
+      description: Was hättest du stattdessen erwartet?
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Tatsächliches Verhalten
+      description: Was ist stattdessen passiert? (Screenshots, Logs, Fehlermeldungen gerne hier einfügen)
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Schweregrad
+      description: Wie stark ist die Auswirkung dieses Bugs?
+      options:
+        - Kritisch (System nicht nutzbar / Datenverlust)
+        - Hoch (Kernfunktion betroffen, kein Workaround)
+        - Mittel (Funktion betroffen, Workaround vorhanden)
+        - Niedrig (Kosmetisch / geringe Auswirkung)
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version / Commit / Branch
+      placeholder: z. B. v1.4.2 oder commit-hash
+    validations:
+      required: false
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Umgebung
+      options:
+        - Production
+        - Staging
+        - Development
+        - Lokal
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment-details
+    attributes:
+      label: Umgebungsdetails
+      description: "Optional, aber hilfreich: Betriebssystem, Browser, Geräte, relevante Konfiguration etc."
+      placeholder: |
+        - OS: macOS 14.5
+        - Browser: Chrome 128
+        - Node: 20.x
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevante Logs / Stacktrace
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checkliste
+      options:
+        - label: Ich habe nach bestehenden Issues zu diesem Bug gesucht
+          required: true
+        - label: Ich habe den Fehler mit der neuesten Version reproduziert
+          required: false
