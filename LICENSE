@@ -1,0 +1,27 @@
+Usage Notice for This Repository
+
+This repository is intended solely for public discussion related to
+gymboard — e.g., feature requests, bug reports (issues), and
+general discussion among users, organizers, and the development team.
+
+This repository, its contents, and any contributions to it (e.g.,
+creating issues, comments, or discussion posts) do not grant any
+rights whatsoever to:
+
+- the source code or software of gymboard,
+- the trademark, name, or design of gymboard,
+- the use of the SaaS service itself.
+
+Use of the actual SaaS service gymboard is governed exclusively
+by the Terms of Service.
+
+Unless otherwise noted, contributions (issues, comments, code
+snippets, example configurations) made in this repository are
+licensed under Creative Commons CC BY-NC-ND 4.0. Under this license,
+they may be reused with attribution, but not for commercial purposes
+and not in modified form.
+
+By submitting a contribution to this repository, you grant
+[Patrick Wachsmuth / Flagman's World] the right to use, process, and implement
+that contribution in connection with the further development of
+gymboard
